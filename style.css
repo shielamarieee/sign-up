@@ -103,12 +103,19 @@ main {
 input {
   border-radius: 3px;
   border: 1px solid #deece4;
+  padding: 5px;
   height: 5vh;
   width: 80%;
 }
 
 input:focus {
   border: 2px solid #1b4930;
+  outline: none;
+  background-color: #f1f8f4;
+}
+
+.error{
+  border: 2px solid red;
   outline: none;
 }
 
@@ -141,6 +148,12 @@ button:hover {
   color: #0e3620;
 }
 
+.error-message {
+  color: red;
+  text-transform: lowercase;
+  font-weight: 200;
+}
+
 
 /* Media Queries */
 
@@ -156,6 +169,10 @@ button:hover {
   .logo {
     top: 0;
     width: 100%;
+  }
+
+  .logo img {
+    height: 15vh;
   }
 
   .credits {
@@ -192,5 +209,3 @@ button:hover {
     display: block;
     margin-bottom: 20px;
   }
-
-}
