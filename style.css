@@ -8,6 +8,7 @@ main {
   width: 100vw;
   height: 100vh;
   display: flex;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /*LEFT*/
@@ -15,6 +16,7 @@ main {
 .left-section {
   background-image: url(background.jpg);
   width: 40vw;
+  height: auto;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -31,8 +33,8 @@ main {
   text-transform: uppercase;
   width: 40vw;
   height: 20vh;
-  top: 20vh;
-  font-size: 50px;
+  top: 25vh;
+  font-size: 3rem;
 }
 
 .logo img {
@@ -49,4 +51,89 @@ main {
 
 .credits a {
   color: white;
+}
+
+/*RIGHT*/
+
+.right-section {
+  background-color: #f1f8f4;
+  width: 60vw;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.upper-text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 20vh;
+  padding-bottom: 5vh;
+  font-weight: 800;
+  padding-left: 30px;
+  font-size: 1.4rem;
+  width: 90%;
+}
+
+.form-card {
+  background-color: white;
+  padding: 20px 30px;
+  box-shadow: 5px 5px 3px #e7e5e5;
+  height: 38vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+.form-card .heading {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 0.8rem;
+}
+
+input {
+  border-radius: 3px;
+  border: 1px solid #deece4;
+  height: 5vh;
+  width: 80%;
+}
+
+input:focus {
+  border: 2px solid #1b4930;
+  outline: none;
+}
+
+button {
+  margin: 20px 30px;
+  background-color: #1b4930;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  color: white;
+  box-shadow: 0 0 3px #e7e5e5;
+}
+
+button:hover {
+  background-color: #0e3620;
+  cursor: pointer;
+}
+
+.lower-text {
+  margin-left: 30px;
+}
+.lower-text a {
+  color: #1b4930;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.lower-text a:hover {
+  color: #0e3620;
 }
