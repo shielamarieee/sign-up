@@ -34,7 +34,10 @@ main {
   width: 40vw;
   height: 20vh;
   top: 25vh;
-  font-size: 3rem;
+}
+
+.logo h1 {
+  font-size: 5vw;
 }
 
 .logo img {
@@ -136,4 +139,58 @@ button:hover {
 
 .lower-text a:hover {
   color: #0e3620;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 600px) {
+  main {
+    flex-direction: column;
+  } 
+
+  .left-section {
+    width: 100%;
+  }
+
+  .logo {
+    top: 0;
+    width: 100%;
+  }
+
+  .credits {
+    visibility: hidden;
+  }
+
+  .right-section {
+    width: 100%;
+  }
+
+  .upper-text {
+    padding-top: 5vh;
+    text-align: center;
+  }
+
+  .form-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-height: 80vh;
+    margin-bottom: 20px;
+  }
+
+  .input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  button, .lower-text {
+    margin: auto;
+    display: block;
+    margin-bottom: 20px;
+  }
+
 }
